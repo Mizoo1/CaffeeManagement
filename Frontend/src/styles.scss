@@ -1,23 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-  //responsibe table
+  //responsible table
   @media(max-width: 800px) {
     .responsive_table {
         overflow-x: auto !important;
     }
-  
+
     .mat-table {
         min-width:800px;
     }
   }
-  
+
   .mat-row {
     height: auto;
   }
-  
+
   .mat-header-cell,.mat-cell {
     text-align: center !important;
     padding: 0px 8px 0px 15px !important;
@@ -46,3 +47,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .spacer {
   flex: 1 auto;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

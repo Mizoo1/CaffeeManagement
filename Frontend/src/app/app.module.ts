@@ -14,19 +14,6 @@ import { FullComponent } from './layouts/full/full.component';
 import { AppHeaderComponent } from './layouts/full/header/header.component';
 import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
 import {HttpClientModule} from '@angular/common/http';
-import {SignupComponent} from "./signup/signup.component";
-import {NgxUiLoaderConfig, NgxUiLoaderModule, SPINNER} from "ngx-ui-loader";
-
-const ngxUiLoaderConfig: NgxUiLoaderConfig ={
-  text:"Loader...",
-  textColor:"#FFFFFF",
-  textPosition:"center-center",
-  bgsColor:"#7b1fa2",
-  fgsColor:"#7b1fa2",
-  fgsType:SPINNER.squareJellyBox,
-  fgsSize:100,
-  hasProgressBar:false
-}
 
 @NgModule({
   declarations: [
@@ -46,8 +33,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig ={
     MaterialModule,
     FlexLayoutModule,
     SharedModule,
-    HttpClientModule,
-    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig)
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
